@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Urbanist", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a,
+span {
+    font-size: 1.6rem;
+    color: gray;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 4rem;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0rem auto;
+}
+
+.header-section,
+.hero-section,
+.icon-section {
+    padding: 1.5rem 3rem;
+    margin-bottom: 5rem;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-two-cols {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+.grid-three-cols {
+    grid-template-columns: repeat(3, 1fr);
+    /* gap: 1.2rem; */
+}
+
+
+/* Header Section Starts */
+
+.header-section {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-section img {
+    width: 4rem;
+}
+
+.logo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.vpn {
+    font-weight: bold;
+    color: black;
+}
+
+.nav-section,
+nav ul {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 3rem;
+}
+
+.active-link {
+    color: red;
+}
+
+nav ul li a:hover {
+    color: rgb(57, 56, 56);
+}
+
+.sign-section {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.sign-in {
+    padding: 1rem;
+    font-weight: bold;
+    color: black;
+    transition: all ease .3s;
+}
+
+.sign-up {
+    font-size: 1.6rem;
+    padding: .6rem 1.8rem;
+    color: red;
+    border: .2rem solid red;
+    border-radius: 2rem;
+    transition: all ease-in .3s;
+}
+
+.sign-in:hover {
+    color: rgb(42, 41, 41);
+    text-decoration: underline;
+}
+
+.sign-up:hover {
+    background-color: red;
+    color: white;
+}
+
+/* Header Part Ends */
+
+/* Hero-section part begains */
+
+:is(.intro-section) .intro-heading,
+.about-intro {
+    margin: 2rem 0rem;
+}
+
+.intro-section span {
+    font-size: 3rem;
+    color: black;
+    font-weight: 900;
+}
+
+.intro-section .about-intro {
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+}
+
+.intro-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & img {
+        width: 100%;
+    }
+}
+
+.intro-btn button {
+    padding: 1rem 4rem;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border: .1rem solid red;
+    border-radius: .4rem;
+    box-shadow: .1rem .4rem .5rem .2rem red;
+}
+
+/* Hero Section part ends */
+
+/* Icon Section starts */
+
+.about-icon-section{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.icon-class{
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+    line-height: 4rem;
+    font-size: 2rem;
+    border-radius: 50%;
+    color: red;
+    background-color: rgb(227, 159, 159);
+}
+
+.number-user{
+    font-size: 1.7rem;
+}
+
+.number-user~p{
+    font-size: 1.4rem;
+}
+
+/* Icon Section Ends */
