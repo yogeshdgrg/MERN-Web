@@ -31,7 +31,13 @@ h1 {
 
 .header-section,
 .hero-section,
-.icon-section {
+.icon-section,
+.feature-section,
+.plan-section,
+.package-section,
+.global-section,
+.global-img-section,
+.company-logo {
     padding: 1.5rem 3rem;
     margin-bottom: 5rem;
 }
@@ -44,6 +50,7 @@ h1 {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
 }
+
 .grid-three-cols {
     grid-template-columns: repeat(3, 1fr);
     /* gap: 1.2rem; */
@@ -168,7 +175,7 @@ nav ul li a:hover {
 
 /* Icon Section starts */
 
-.about-icon-section{
+.about-icon-section {
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     height: 20rem;
     display: flex;
@@ -177,7 +184,7 @@ nav ul li a:hover {
     gap: 2rem;
 }
 
-.icon-class{
+.icon-class {
     width: 4rem;
     height: 4rem;
     text-align: center;
@@ -188,12 +195,190 @@ nav ul li a:hover {
     background-color: rgb(227, 159, 159);
 }
 
-.number-user{
+.number-user {
     font-size: 1.7rem;
 }
 
-.number-user~p{
+.number-user~p {
     font-size: 1.4rem;
 }
 
 /* Icon Section Ends */
+
+/* Feature Section Begains */
+
+.feature-img img {
+    width: 100%;
+}
+
+.about-features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    & h2 {
+        font-size: 4.5rem;
+        margin-bottom: 1.4rem;
+        color: #0B132A;
+    }
+
+    & p {
+        font-size: 1.3rem;
+        color: rgb(99, 92, 92);
+        line-height: 1.8rem;
+        margin-bottom: 1.4rem;
+    }
+}
+
+.features .fa-circle-check {
+    font-size: 1.4rem;
+    color: green;
+    margin-right: .6rem;
+}
+
+.features .feature-list {
+    color: rgb(99, 92, 92);
+    font-size: 1.4rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+/* Feature Section Ends */
+
+/* Plan Section Begains */
+
+.plan-header {
+    font-size: 3.5rem;
+    text-align: center;
+    color: #0B132A;
+    margin-bottom: 2rem;
+}
+
+.about-plan {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #4F5665;
+}
+
+/* Plan Section Ends */
+
+/* Package Section Begains */
+.package-section {
+    gap: .5rem;
+    place-items: center;
+}
+
+.package-content {
+    border: .1rem solid red;
+    padding: 2rem 2rem 0rem;
+    background-color: #FFF;
+    width: 33rem;
+    height: 760px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    & img {
+        margin-bottom: 2rem;
+    }
+}
+
+.fa-check {
+    font-size: 1.2rem;
+    color: green;
+}
+
+figcaption {
+    font-size: 1.8rem;
+    color: #0B132A;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.select-btn {
+    font-size: 1.6rem;
+    padding: .6rem 3.6rem;
+    color: red;
+    border: .2rem solid red;
+    border-radius: 2rem;
+}
+
+.about-pricing {
+    padding: 1.2rem;
+
+    & .pricing-list .about-list {
+        font-size: 1.4rem;
+        color: #4F5665;
+        margin-left: 1rem;
+        font-weight: lighter;
+    }
+}
+
+.pricing-list {
+    margin-bottom: 1rem;
+}
+
+.package-btn {
+    margin-top: 8rem;
+
+    & p {
+        font-size: 2.5rem;
+        color: #0B132A;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}
+
+/* Package Section Ends */
+
+/* Global section Starts */
+:is(.global-section,.testimonal-section) h2 {
+    font-size: 3.5rem;
+    text-align: center;
+    color: #0B132A;
+    margin-bottom: 1.2rem;
+}
+
+:is(.global-section,.testimonal-section) p {
+    text-align: center;
+    font-size: 1.6rem;
+    color: #4F5665;
+
+    & span {
+        font-weight: bold;
+        color: #4F5665;
+
+    }
+}
+
+/* Global section Ends */
+
+/* Global Image section Starts */
+
+.global-img-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & img{
+        width: 80%;
+    }
+}
+
+/* Global Image section Ends */
+
+/* Comapny logo section starts */
+
+.company-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+}
+
+/* Comapny logo section Ends */
