@@ -37,7 +37,7 @@ h1 {
 .package-section,
 .global-section,
 .global-img-section,
-.company-logo {
+.company-logo .footer-section {
     padding: 1.5rem 3rem;
     margin-bottom: 5rem;
 }
@@ -54,6 +54,10 @@ h1 {
 .grid-three-cols {
     grid-template-columns: repeat(3, 1fr);
     /* gap: 1.2rem; */
+}
+
+.grid-four-cols {
+    grid-template-columns: repeat(4, 1fr);
 }
 
 
@@ -336,14 +340,14 @@ figcaption {
 /* Package Section Ends */
 
 /* Global section Starts */
-:is(.global-section,.testimonal-section) h2 {
+:is(.global-section, .testimonal-section) h2 {
     font-size: 3.5rem;
     text-align: center;
     color: #0B132A;
     margin-bottom: 1.2rem;
 }
 
-:is(.global-section,.testimonal-section) p {
+:is(.global-section, .testimonal-section) p {
     text-align: center;
     font-size: 1.6rem;
     color: #4F5665;
@@ -359,12 +363,12 @@ figcaption {
 
 /* Global Image section Starts */
 
-.global-img-section{
+.global-img-section {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    & img{
+    & img {
         width: 80%;
     }
 }
@@ -379,6 +383,108 @@ figcaption {
     align-items: center;
     gap: 1.2rem;
     flex-wrap: wrap;
+    margin-bottom: 2.3rem;
 }
 
 /* Comapny logo section Ends */
+
+/* Testimonial section starts */
+.testimonal-section{
+    margin-bottom: 5rem;
+}
+/* Testimonial section Ends */
+
+
+/* Footer Section Starts */
+.footer-section{
+    padding: 3rem;
+    gap: 2rem;
+    background-color: #e0dada63;
+}
+
+.footer1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 2rem;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.8rem;
+}
+
+.footer1 .footer-logo img {
+    width: 4rem;
+}
+
+.about-footer {
+    & p {
+        font-size: 1.4rem;
+        line-height: 2.5rem;
+        margin-bottom: 1.5rem;
+
+        & span {
+            color: black;
+            font-weight: bold;
+        }
+    }
+}
+
+.about-footer .footer-icons {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1.3rem;
+    margin-bottom: 2rem;
+
+    & .fa-user {
+        font-size: 1.8rem;
+        width: 4rem;
+        height: 4rem;
+        line-height: 4rem;
+        text-align: center;
+        color: red;
+        background-color: white;
+        border-radius: 50%;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+}
+
+.footer1 .copy-right {
+    font-size: 1rem;
+}
+
+.footer2,
+.footer3,
+.footer4 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 2rem;
+}
+
+
+:is(.footer2, .footer3, .footer4) {
+    & h3 {
+        font-size: 1.6rem;
+        margin: 1.4rem 0rem;
+    }
+}
+
+:is(.footer2, .footer3, .footer4) .footer-list-heading {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+:is(.footer2, .footer3, .footer4) ul li {
+    font-size: 1.5rem;
+    padding: .6rem 0rem;
+}
+
+/* Footer Section Ends */
