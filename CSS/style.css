@@ -37,7 +37,11 @@ h1 {
 .package-section,
 .global-section,
 .global-img-section,
-.company-logo .footer-section {
+.company-logo,
+.testimonal-section,
+.client-section,
+.subscribe-section,
+.footer-section {
     padding: 1.5rem 3rem;
     margin-bottom: 5rem;
 }
@@ -62,6 +66,13 @@ h1 {
 
 
 /* Header Section Starts */
+
+header{
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
 
 .header-section {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -389,17 +400,122 @@ figcaption {
 /* Comapny logo section Ends */
 
 /* Testimonial section starts */
-.testimonal-section{
+.testimonal-section {
     margin-bottom: 5rem;
 }
+
 /* Testimonial section Ends */
 
 
+/* Testimonail Slide Starts */
+
+.client-section {
+    position: relative;
+    margin-bottom: 6rem;
+}
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5rem;
+}
+
+
+.swiper-slide {
+    border: 1px solid ;
+    border-radius: .7rem;
+    font-size: 1.5rem;
+    color: #0B132A;
+    line-height: 2rem;
+    padding: 2rem;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.swiper-top .about-client {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.about-client .client-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+.about-client .client-rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    & i {
+        color: orange;
+    }
+}
+
+/* Testimonail Slide Ends */
+
+
+/* Subscribe Section Starts */
+
+.subscribe-section{
+    background: white;
+    position: relative;
+    z-index: 2;
+    width: 60%;
+    margin: 0 20% -4%;
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.subscribe-section .subscribe-now {
+    & h2{
+        font-size: 3rem;
+        color: #0B132A;
+    }
+
+    & p{
+        margin: 1rem 0;
+        font-size: 1.3rem;
+        color: #4F5665;
+    }
+}
+
+.subscribe-section .subscribe-btn button{
+    padding: 1rem 2.2rem;
+    font-weight: bold;
+    color: white;
+    background-color: #F53838;
+    border: none;
+    border-radius: .4rem;
+}
+
+/* Subscribe Section Ends */
+
 /* Footer Section Starts */
-.footer-section{
+.footer-section {
     padding: 3rem;
     gap: 2rem;
     background-color: #e0dada63;
+    margin-bottom: 0;
 }
 
 .footer1 {
