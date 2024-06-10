@@ -16,10 +16,10 @@ const findElem = array => array[Math.floor(Math.random() * array.length)]
 
 const signUp = (perName) => {
     return {
-        ["name"]: perName,
-        ["province"]: findElem(provinces),
-        ["gender"]: findElem(genders),
-        ["religon"]: findElem(religions),
+        "name": perName,
+        "province": findElem(provinces),
+        "gender": findElem(genders),
+        "religon": findElem(religions),
     }
 }
 
